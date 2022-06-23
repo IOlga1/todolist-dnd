@@ -20,6 +20,11 @@ export const TodoContext = React.createContext({
   counterDelete: 0,
   counterFinished: 0,
   counterMiddleTime: 0,
+  setCounterAdd: (fiber: any, queue: any, action: any) => { },
+  setCounterDelete: (fiber: any, queue: any, action: any) => { },
+  setCounterFinished: (fiber: any, queue: any, action: any) => { },
+  setCounterMiddleTime: (fiber: any, queue: any, action: any) => { },
+  extraRender: () => {},
 });
 
 function App() {
@@ -226,6 +231,7 @@ function App() {
   }
 
 
+
   return (
     <div className='wrap'>
       <Nav />
@@ -242,6 +248,11 @@ function App() {
           counterDelete,
           counterFinished,
           counterMiddleTime,
+          setCounterAdd,
+          setCounterDelete,
+          setCounterFinished,
+          setCounterMiddleTime,
+          extraRender,
         }
       }>
 
