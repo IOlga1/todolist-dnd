@@ -1,0 +1,89 @@
+.nav_sidebar_wrap {
+    margin: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    width: 60px;
+    height: fit-content;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -3px 3px 7px #113e6da8;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.nav_toggle_wrap{
+    margin-top: 15px;
+}
+
+.nav_toggle_dots {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    background-image: url(../../public/img/dots.svg);
+}
+
+
+.nav_toggle_arrow {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    transform: rotate(45deg);
+    background-image: url(../../public/img/dots.svg);
+}
+
+.nav_items_wrap {
+    margin: 50px 0 17px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nav_item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav_icon {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nav_icon_home {
+    background-image: url(../../public/img/home.svg);
+}
+
+.nav_icon_todolist {
+    background-image: url(../../public/img/todolist.svg);
+}
+
+.nav_icon_statistic {
+    background-image: url(../../public/img/graphic.svg);
+}
+
+.nav_text {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav_text_visible {
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.nav_text_hidden {
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    font-size: 7px;
+    margin-top: -15px;
+    color: rgba(255, 255, 255, 0);
+}
+
+
+
+

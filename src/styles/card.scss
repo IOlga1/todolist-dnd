@@ -1,0 +1,79 @@
+
+
+
+.task_wrap {
+    display: flex;
+    padding: 10px 10px 12px 15px;
+    background-color: white;
+    // border: 1px solid red;
+    border-radius: 10px;
+    user-select: none;
+    gap: 10px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.task_text {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    overflow-wrap:break-word;
+    hyphens: auto;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.title_text{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.description_text{
+    font-size: 16px;
+}
+
+// .date {
+//     font-size: 10px;
+//     text-align: end;
+//     margin-top: 2vh;
+// }
+
+.check {
+    width: 45px;
+    display: flex;
+    gap: 3px;
+}
+
+.redo_button,
+.delete_button {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    height: 17px;
+    width: 17px;
+    border-radius: 3px;
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.redo_button {
+    border: 1px solid #298582;
+    background-image: url(../../public/img/pencil.svg);
+}
+
+.delete_button {
+    border: 1px solid #e61010;
+    background-image: url(../../public/img/cross.svg);
+}
+
+.hidden_button {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+

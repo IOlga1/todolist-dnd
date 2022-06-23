@@ -1,0 +1,39 @@
+.doit_area_wrap {
+    // border: 1px solid red;
+    margin: 50px 0 70px;
+    height: 115%;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position: 3vw 2vw;
+    box-sizing: border-box;
+}
+
+.module_doit {
+    width: 100%;
+}
+
+.svg_doit {
+    fill: #bac8e500;
+    stroke-width: 2px;
+    stroke: rgba(255, 255, 255, 0.923);
+    stroke-dasharray: 1150;
+    stroke-dashoffset: 1150;
+    animation: anim-line32 2s linear 1 0.2s;
+    animation-fill-mode: forwards;
+  }
+
+@keyframes anim-line32 {
+    70%{
+        fill: #ffffff00;
+    }
+    85%{
+        stroke-dasharray: 1150px;
+        stroke-dashoffset: 0px;
+        // fill: #ffffff00;
+    }
+
+    100%{
+        fill: rgb(255, 255, 255);
+        stroke: rgba(255, 255, 255, 0);
+    }
+}

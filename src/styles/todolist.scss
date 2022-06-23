@@ -1,0 +1,27 @@
+.todolist_wrap {
+    width: 89vw;
+    height: 99vh;
+    position: relative;
+}
+
+.todolist_top_area_wrap {
+    margin-top: 10px;
+    // border: 1px red solid;
+    width: 100%;
+    height: 80vh;
+}
+
+
+.todolist_bottom_wrap {
+    // border: 1px red solid;
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+    overflow-x: hidden;
+    position: absolute;
+    bottom: 25px;
+    position: relative;
+}

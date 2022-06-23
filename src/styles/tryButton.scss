@@ -1,0 +1,34 @@
+.button_try_wrap {
+    // border: 1px solid red;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+.button_try {
+    box-sizing: border-box;
+    border: 2px solid white;
+    padding: 0 100px 0 100px;
+    height: 60px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: animation-name 2s ease-in-out 1 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animation-name {
+    100% {
+        border: 2px solid rgb(35, 70, 175);
+        background-color: rgb(35, 70, 175);
+        box-shadow: -2px 2px 12px 12px rgba(255, 255, 255, 0.298);
+    }
+} ;

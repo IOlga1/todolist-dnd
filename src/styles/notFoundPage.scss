@@ -1,0 +1,45 @@
+.notFoundPage_404_wrap {
+    // border: 1px solid red;
+    position: relative;
+    width: 90vw;
+    height: 99vh;
+    background-image: url('../../public/img/404.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+
+.timer_home_redirect {
+    // border: 1px solid red;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    width: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    :nth-child(1) {
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        text-shadow: -3px 3px 7px #113d6d68;;
+    }
+}
+
+@media (max-width: 615px){
+    .notFoundPage_404_wrap {
+        width: 80vw;
+        background-position-y: 5px;
+        background-size: 90%;
+    }
+
+    .timer_home_redirect {
+        bottom: 40vh;
+    }
+}
+
+@media (max-width: 450px){
+    .notFoundPage_404_wrap {
+        width: 75vw;
+    }
+}

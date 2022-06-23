@@ -1,0 +1,42 @@
+.dnd_area_wrap {
+    // border: 2px gray solid;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.label_dnd_area {
+    width: 32%;
+    box-sizing: border-box;
+}
+
+.label_todolist {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 26px;
+    user-select: none;
+}
+
+.dnd_area {
+    box-shadow: inset -1px 1px 20px 1px #78787882;
+    border-radius: 20px;
+    padding: 20px;
+    height: 80%;
+    background-color: rgba(77, 77, 77, 0.109);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        background-color: rgba(221, 221, 221, 0);
+        width: 15px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #778aaf;
+        border-radius: 8px;
+    }
+}
