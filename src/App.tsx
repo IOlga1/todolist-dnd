@@ -74,8 +74,8 @@ function App() {
       }
 
       setCounterAdd(counterAddLS);
-      setCounterDelete(counterDeleteLS);
       setCounterFinished(counterFinishedLS);
+      setCounterDelete(counterDeleteLS);
     }
 
   }, [])
@@ -101,6 +101,10 @@ function App() {
     localStorage.setItem("counterAdd", JSON.stringify(counterAdd));
     localStorage.setItem("counterDelete", JSON.stringify(counterDelete));
     localStorage.setItem("counterFinished", JSON.stringify(counterFinished));
+
+    if (counterFinished < 0){
+      setCounterFinished(0);
+    } 
 
   }, [plannedTasks, inProcessTasks, finishedTasks, updateState])
 

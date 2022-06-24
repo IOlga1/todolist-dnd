@@ -1,11 +1,7 @@
-
-
-
 .task_wrap {
     display: flex;
     padding: 10px 10px 12px 15px;
     background-color: white;
-    // border: 1px solid red;
     border-radius: 10px;
     user-select: none;
     gap: 10px;
@@ -18,18 +14,18 @@
     box-sizing: border-box;
     width: 100%;
     overflow: hidden;
-    overflow-wrap:break-word;
+    overflow-wrap: break-word;
     hyphens: auto;
     width: 60%;
     box-sizing: border-box;
 }
 
-.title_text{
+.title_text {
     font-size: 24px;
     font-weight: 600;
 }
 
-.description_text{
+.description_text {
     font-size: 16px;
 }
 
@@ -76,4 +72,3 @@
     z-index: 10;
     cursor: pointer;
 }
-

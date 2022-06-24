@@ -65,8 +65,12 @@
     bottom: 0;
     width: 45px;
     user-select: none;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
 }
 
 .button_remove_stats:active {
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
     box-shadow: -1px 1px 3px #113e6da8;
 }

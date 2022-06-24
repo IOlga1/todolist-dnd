@@ -1,4 +1,5 @@
 import '../../styles/home.scss';
+import { HowToUse } from './welcomeCollumn/howToUseCollumn/HowToUse';
 import { WelcomeCollumn } from './welcomeCollumn/welcomeCollumn';
 
 export const Home = () => {
@@ -6,7 +7,7 @@ export const Home = () => {
         <>
             <div className="home_wrap">
                 <WelcomeCollumn />
-                <p>Контент домашней</p>
+                <HowToUse/>
             </div>
         </>
     )
