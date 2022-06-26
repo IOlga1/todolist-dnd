@@ -11,7 +11,7 @@ export const InProcess: FC<DndProps> = ({ getDndItem, getDndTarget }) => {
 
     return (
         <div className='label_dnd_area'>
-            <p className='label_todolist tasks_process'>inProcess</p>
+            <p className='label_todolist tasks_process'>Doing</p>
             <div className='dnd_area dnd_area_process' id="process_area" onDragOver={(event) => event.preventDefault()} onDrop={dropFinish}>
                 <InProcessCard getDndItem={getDndItem} />
             </div>

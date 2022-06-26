@@ -35,8 +35,8 @@
     .use_card {
         position: relative;
         height: fit-content;
-        opacity: 0;
-        transition: all 500ms ease-in-out 200ms;
+        opacity: 1;
+        // transition: all 500ms ease-in-out 200ms;
 
         & > img {
             filter: drop-shadow(-3px 3px 10px #2e2e5339);
@@ -53,10 +53,6 @@
                 text-shadow: 0 0 10px rgba(255, 255, 255, 0.876);
             }
         }
-    }
-
-    .use_card_visible {
-        opacity: 1;
     }
 
     & :nth-child(1) {

@@ -8,7 +8,6 @@ import sixthSlide from '../../../../img/howToUse/6use.jpg';
 import seventhSlide from '../../../../img/howToUse/7use.jpg';
 import eighthSlide from '../../../../img/howToUse/8use.jpg';
 import ninthSlide from '../../../../img/howToUse/9use.jpg';
-
 import empty from '../../../../img/howToUse/empty.png'
 import { useEffect, useRef, useState } from 'react';
 
@@ -16,11 +15,9 @@ import { useEffect, useRef, useState } from 'react';
 export const HowToUse = () => {
 
     const refUseCardWrap = useRef();
-    const [visible, setVisible] = useState('use_card');
 
     useEffect(() => {
         refUseCardWrap.current.scrollTo(0, 3400);
-        setVisible('use_card use_card_visible');
     }, [])
 
 
@@ -30,21 +27,21 @@ export const HowToUse = () => {
         <div className="use_wrap">
             <div className='use_slider_wrap' ref={refUseCardWrap}>
 
-                <div className={visible}>
+                <div className='use_card'>
                     <img src={ninthSlide} alt=""></img>
                     <div className='description_how_use'>
                         <p>You can also reset statistics</p>
                         <p>&#11015;</p>
                     </div>
                 </div>
-                <div className={visible}>
+                <div className='use_card'>
                     <img src={eighthSlide} alt=""></img>
                     <div className='description_how_use'>
                         <p>Click here and you will go to statistics</p>
                         <p>&#11015;</p>
                     </div>
                 </div>
-                <div className={visible}>
+                <div className='use_card'>
                     <img src={seventhSlide} alt=""></img>
                     <div className='description_how_use'>
                         <p>You can close the browser tab <br />
@@ -53,7 +50,7 @@ export const HowToUse = () => {
                         <p>&#11015;</p>
                     </div>
                 </div>
-                <div className={visible}>
+                <div className='use_card'>
                     <img src={sixthSlide} alt=""></img>
                     <div className='description_how_use'>
                         <p>And you can delete the task <br />
@@ -61,7 +58,7 @@ export const HowToUse = () => {
                         <p>&#11015;</p>
                     </div>
                 </div>
-                <div className={visible}>
+                <div className='use_card'>
                     <img src={fifthSlide} alt=""></img>
                     <div className='description_how_use'>
                         <p>If you want to edit any field <br />
@@ -70,7 +67,7 @@ export const HowToUse = () => {
                         <p>&#11015;</p>
                     </div>
                 </div>
-                <div className={visible}>
+                <div className='use_card'>
                     <img src={fourthSlide} alt=""></img>
                     <div className='description_how_use'>
                         <p>You can take any card and drag it <br />
@@ -79,14 +76,14 @@ export const HowToUse = () => {
                         <p>&#11015;</p>
                     </div>
                 </div>
-                <div className={visible}>
+                <div className='use_card'>
                     <img src={thirdSlide} alt=""></img>
                     <div className='description_how_use'>
                         <p>The added tasks will look like this.</p>
                         <p>&#11015;</p>
                     </div>
                 </div>
-                <div className={visible}>
+                <div className='use_card'>
                     <img src={secondSlide} alt=""></img>
                     <div className='description_how_use'>
                         <p>Type the title and description, then click <br />
@@ -95,7 +92,7 @@ export const HowToUse = () => {
                         <p>&#11015;</p>
                     </div>
                 </div>
-                <div className={visible}>
+                <div className='use_card'>
                     <img src={firstSlide} alt=""></img>
                     <div className='description_how_use'>
                         <p>Start adding the tasks - click here</p>

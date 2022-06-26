@@ -11,7 +11,7 @@ export const Planned: FC<DndProps> = ({ getDndItem, getDndTarget }) => {
 
     return (
         <div className='label_dnd_area'>
-            <p className='label_todolist tasks_planned'>Planned</p>
+            <p className='label_todolist tasks_planned'>To Do</p>
             <div className='dnd_area dnd_area_planned' id="planned_area" onDragOver={(event) => event.preventDefault()} onDrop={dropFinish} >
                 <PlannedItemCard getDndItem={getDndItem} />
             </div>
