@@ -13,17 +13,17 @@ export const TodoContext = React.createContext({
   inProcessTasks: [],
   finishedTasks: [],
   addTask: (task: Object) => { },
-  deleteTask: (itemId: number) => { },
+  deleteTask: (itemId: string) => { },
   edit: (item: HTMLElement, editText: string, editId: string) => { },
   dndChangeList: (itemId: string, targetId: string) => { },
   counterAdd: 0,
   counterDelete: 0,
   counterFinished: 0,
   counterMiddleTime: 0,
-  setCounterAdd: (fiber: any, queue: any, action: any) => { },
-  setCounterDelete: (fiber: any, queue: any, action: any) => { },
-  setCounterFinished: (fiber: any, queue: any, action: any) => { },
-  setCounterMiddleTime: (fiber: any, queue: any, action: any) => { },
+  setCounterAdd: (fiber: any, queue?: any, action?: any) => { },
+  setCounterDelete: (fiber: any, queue?: any, action?: any) => { },
+  setCounterFinished: (fiber: any, queue?: any, action?: any) => { },
+  setCounterMiddleTime: (fiber: any, queue?: any, action?: any) => { },
   extraRender: () => {},
 });
 
@@ -115,7 +115,7 @@ function App() {
     setCounterAdd(counterAdd + 1);
   }
 
-  const deleteTask = (itemId: number) => {
+  const deleteTask = (itemId: string) => {
     setCounterDelete(counterDelete + 1);
     tasks.forEach(areas => {
       for (let task of areas.values()) {

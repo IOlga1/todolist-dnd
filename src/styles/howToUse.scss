@@ -32,20 +32,21 @@
         border-radius: 8px;
     }
 
-
     .use_card {
         position: relative;
         height: fit-content;
-    
+        opacity: 0;
+        transition: all 500ms ease-in-out 200ms;
+
         & > img {
             filter: drop-shadow(-3px 3px 10px #2e2e5339);
         }
-    
+
         & .description_how_use {
             position: absolute;
             white-space: nowrap;
-            >p{
-                color: #2346AF;
+            > p {
+                color: #2346af;
                 font-family: Arial, Helvetica, sans-serif;
                 font-weight: 600;
                 font-size: 22px;
@@ -54,18 +55,22 @@
         }
     }
 
-    & :nth-child(1)  {
+    .use_card_visible {
+        opacity: 1;
+    }
+
+    & :nth-child(1) {
         position: sticky;
         top: 0px;
         z-index: 1;
-        & :nth-child(2){
+        & :nth-child(2) {
             top: 75%;
             left: 50%;
             transform: translateX(-50%);
         }
 
         & .description_how_use {
-            color: #2346AF;
+            color: #2346af;
             & :nth-child(2) {
                 position: inherit;
                 top: -34px;
@@ -75,20 +80,20 @@
             }
         }
     }
-    & :nth-child(2)  {
+    & :nth-child(2) {
         position: sticky;
         top: 15px;
         z-index: 2;
         margin-left: 15px;
         transform: rotate(4deg);
-        & :nth-child(2){
+        & :nth-child(2) {
             top: 76%;
             left: 50%;
             transform: translateX(-50%);
         }
 
         & .description_how_use {
-            color: #2346AF;
+            color: #2346af;
             & :nth-child(2) {
                 position: inherit;
                 top: -53px;
@@ -98,32 +103,33 @@
             }
         }
     }
-    & :nth-child(3), .description_how_use {
+    & :nth-child(3),
+    .description_how_use {
         position: sticky;
         top: 10px;
         z-index: 3;
         margin-left: -15px;
         transform: rotate(-2deg);
-        & :nth-child(2){
+        & :nth-child(2) {
             top: 37%;
             left: 50%;
             transform: translateX(-50%);
         }
     }
-    & :nth-child(4)  {
+    & :nth-child(4) {
         position: sticky;
         top: 25px;
         z-index: 4;
         margin-left: 10px;
         transform: rotate(-4deg);
-        & :nth-child(2){
+        & :nth-child(2) {
             top: 66%;
             left: 50%;
             transform: translateX(-50%);
         }
 
         & .description_how_use {
-            color: #2346AF;
+            color: #2346af;
             & :nth-child(2) {
                 position: inherit;
                 top: -90px;
@@ -139,14 +145,14 @@
         z-index: 5;
         margin-left: -10px;
         transform: rotate(3deg);
-        & :nth-child(2){
+        & :nth-child(2) {
             top: 62%;
             left: 50%;
             transform: translateX(-50%);
         }
 
         & .description_how_use {
-            color: #2346AF;
+            color: #2346af;
             & :nth-child(2) {
                 position: inherit;
                 top: -84px;
@@ -156,25 +162,27 @@
             }
         }
     }
-    & :nth-child(6), .description_how_use {
+    & :nth-child(6),
+    .description_how_use {
         position: sticky;
         top: 15px;
         z-index: 6;
         margin-left: 10px;
         transform: rotate(1deg);
-        & :nth-child(2){
+        & :nth-child(2) {
             top: 40%;
             left: 50%;
             transform: translateX(-50%);
         }
     }
-    & :nth-child(7), .description_how_use {
+    & :nth-child(7),
+    .description_how_use {
         position: sticky;
         top: 10px;
         z-index: 7;
         margin-left: -10px;
         transform: rotate(-3deg);
-        & :nth-child(2){
+        & :nth-child(2) {
             top: 57%;
             left: 50%;
             transform: translateX(-50%);
@@ -186,14 +194,14 @@
         z-index: 8;
         margin-left: 10px;
         transform: rotate(3deg);
-        & :nth-child(2){
+        & :nth-child(2) {
             top: 40%;
             left: 50%;
             transform: translateX(-50%);
         }
 
         & .description_how_use {
-            color: #2346AF;
+            color: #2346af;
             & :nth-child(2) {
                 position: inherit;
                 top: 45px;
@@ -216,14 +224,14 @@
         z-index: 9;
         margin-left: 10px;
         transform: rotate(-1deg);
-        & :nth-child(2){
+        & :nth-child(2) {
             top: 40%;
             left: 50%;
             transform: translateX(-50%);
         }
 
         & .description_how_use {
-            color: #2346AF;
+            color: #2346af;
             & :nth-child(2) {
                 position: inherit;
                 top: 27px;
@@ -232,14 +240,8 @@
                 font-size: 50px;
             }
         }
-
     }
-
 }
-
-
-
-
 
 // @media screen and (max-width: 900px) {
 

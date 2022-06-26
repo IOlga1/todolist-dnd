@@ -1,10 +1,11 @@
 import { useContext, useState } from 'react';
 import { TodoContext } from '../../../App';
+import { ContextPropses } from '../../../interfaces/interfaces';
 
 
 export const ButtonRemoveStat = () => {
 
-    const myContext: any = useContext(TodoContext);
+    const myContext: ContextPropses = useContext(TodoContext);
 
     const removeStatsBtn = () => {
         myContext.setCounterAdd(0);

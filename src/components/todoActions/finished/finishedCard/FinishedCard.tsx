@@ -1,16 +1,14 @@
 import '../../../../styles/card.scss';
 import { useContext, useState, FC, DragEvent, FocusEvent, MouseEvent } from 'react';
 import { TodoContext } from '../../../../App';
+import { ContextPropses, CardItemProps } from '../../../../interfaces/interfaces'
 
-interface FinishedCardProps {
-    getDndItem: (itemId: string) => void,
-}
 
-export const FinishedCard: FC<FinishedCardProps> = ({ getDndItem }) => {
+export const FinishedCard: FC<CardItemProps> = ({ getDndItem }) => {
     const [editable, setEditable] = useState(false);
     const [hidden, setHidden] = useState(true);
 
-    const myContext: any = useContext(TodoContext);
+    const myContext: ContextPropses = useContext(TodoContext);
 
     const allowDrop = (event: DragEvent<HTMLDivElement>) => {
         const element = event.target as HTMLDivElement;
@@ -33,7 +31,7 @@ export const FinishedCard: FC<FinishedCardProps> = ({ getDndItem }) => {
     const deleteTask = (event: MouseEvent<HTMLDivElement>) => {
         const element = event.target as HTMLInputElement;
         const id = element.id;
-        myContext.deleteTask(element.id);
+        myContext.deleteTask(id);
     }
 
     return (

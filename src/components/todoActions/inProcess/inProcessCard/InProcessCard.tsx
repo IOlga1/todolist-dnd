@@ -1,21 +1,19 @@
 import '../../../../styles/card.scss';
 import { useContext, useState, FC, DragEvent, FocusEvent, MouseEvent } from 'react';
 import { TodoContext } from '../../../../App';
+import { ContextPropses, CardItemProps } from '../../../../interfaces/interfaces'
 
-interface InProcessCardProps {
-    getDndItem: (itemId: string) => void,
-}
 
-export const InProcessCard: FC<InProcessCardProps> = ({ getDndItem }) => {
+export const InProcessCard: FC<CardItemProps> = ({ getDndItem }) => {
     const [editable, setEditable] = useState(false);
     const [hidden, setHidden] = useState(true);
 
-    const myContext: any = useContext(TodoContext);
+    const myContext: ContextPropses = useContext(TodoContext);
 
     const allowDrop = (event: DragEvent<HTMLDivElement>) => {
         const element = event.target as HTMLDivElement;
         const id = element.id;
-        getDndItem(element.id);
+        getDndItem(id);
     }
 
     const edit = () => {

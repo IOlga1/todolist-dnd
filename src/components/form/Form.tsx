@@ -2,20 +2,7 @@ import '../../styles/form.scss';
 import React, { useRef, useState, useContext } from 'react';
 import { TodoContext } from '../../App';
 import { formC } from '../../constants/constants';
-
-interface ContextPropses {
-    plannedTasks: any[],
-    inProcessTasks: any[],
-    finishedTasks: any[],
-    addTask: (task: Object) => void,
-    deleteTask: (itemId: number) => void,
-    edit: (item: HTMLElement, editText: string, editId: string) => void,
-    dndChangeList: (itemId: string, targetId: string) => void,
-    counterAdd: number,
-    counterDelete: number,
-    counterFinished: number,
-    counterMiddleTime: number,
-}
+import { ContextPropses } from '../../interfaces/interfaces';
 
 
 export const Form = () => {

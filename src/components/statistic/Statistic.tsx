@@ -2,15 +2,12 @@ import '../../styles/statistic.scss';
 import { useContext } from 'react';
 import { TodoContext } from '../../App';
 import { ButtonRemoveStat } from './buttonRemoveStat/ButtonRemoveStat';
+import { ContextPropses } from '../../interfaces/interfaces';
 
 
 export const Statistic = () => {
 
-    const myContext: any = useContext(TodoContext);
-
-    // console.log(myContext)
-
-
+    const myContext: ContextPropses = useContext(TodoContext);
 
     return (
         <div className='dynamyc_area_stats'>
