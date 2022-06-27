@@ -37,3 +37,13 @@
         stroke: rgba(255, 255, 255, 0);
     }
 }
+
+@media screen and (max-width: 520px) {
+    .module_doit {
+        display: flex;
+        justify-content: center;
+    }
+    .svg_doit{
+        width: 80%;
+    }
+}
