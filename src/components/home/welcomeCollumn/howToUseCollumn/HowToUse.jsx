@@ -9,7 +9,7 @@ import seventhSlide from '../../../../img/howToUse/7use.jpg';
 import eighthSlide from '../../../../img/howToUse/8use.jpg';
 import ninthSlide from '../../../../img/howToUse/9use.jpg';
 import empty from '../../../../img/howToUse/empty.png'
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 
 export const HowToUse = () => {
@@ -19,9 +19,6 @@ export const HowToUse = () => {
     useEffect(() => {
         refUseCardWrap.current.scrollTo(0, 3400);
     }, [])
-
-
-
 
     return (
         <div className="use_wrap">
@@ -47,7 +44,6 @@ export const HowToUse = () => {
                         <p>You can close the browser tab <br />
                             and return to the App page later. <br />
                             All tasks will be saved.</p>
-                        <p>&#11015;</p>
                     </div>
                 </div>
                 <div className='use_card'>
@@ -73,14 +69,12 @@ export const HowToUse = () => {
                         <p>You can take any card and drag it <br />
                             to the zone, which corresponds <br />
                             to the task execution stage</p>
-                        <p>&#11015;</p>
                     </div>
                 </div>
                 <div className='use_card'>
                     <img src={thirdSlide} alt=""></img>
                     <div className='description_how_use'>
                         <p>The added tasks will look like this.</p>
-                        <p>&#11015;</p>
                     </div>
                 </div>
                 <div className='use_card'>

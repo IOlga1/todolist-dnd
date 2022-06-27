@@ -40,3 +40,41 @@
         border-radius: 8px;
     }
 }
+
+
+@media screen and (max-width: 1000px) {
+    .dnd_area_wrap {
+        height: auto;
+        gap: 35px;
+        flex-direction: column;
+    }
+
+    .dnd_area {
+        height: 450px;
+        width: 88vw;
+    }
+
+    .label_dnd_area{
+        width: 88vw;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .dnd_area {
+        height: 350px;
+        width: 76vw;
+    }
+    .label_dnd_area{
+        width: 76vw;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .dnd_area {
+        height: 350px;
+        width: 90vw;
+    }
+    .label_dnd_area{
+        width: 90vw;
+    }
+}

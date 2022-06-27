@@ -5,3 +5,11 @@
     justify-content: center;
     align-items: center;
 }
+
+
+@media screen and (max-width: 1300px) {
+    .left_home_area_wrap {
+        width: 95%;
+    }
+}
+

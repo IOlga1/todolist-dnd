@@ -111,3 +111,9 @@
     content: "−";
     margin-top: 1px;
 }
+
+@media screen and (max-width: 1000px) {
+    .plus_minus_wrap{
+        top: 8px;
+    }
+}

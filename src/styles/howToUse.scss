@@ -239,6 +239,30 @@
     }
 }
 
-// @media screen and (max-width: 900px) {
+@media screen and (max-width: 1300px) {
+    .use_wrap {
+        width: 95%;
+        margin: 20px 0 180px 20px;
+    }
+}
 
-// }
+@media screen and (max-width: 790px) {
+    .use_wrap {
+        width: 95%;
+        position: absolute;
+        top: 380px;
+        left: -5px;
+    }
+
+    .use_slider_wrap {
+        height: 40vh;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .home_wrap{
+       width: 80%;
+       height: 90vh;
+    }
+}

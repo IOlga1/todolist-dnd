@@ -16,7 +16,7 @@
     overflow: hidden;
     overflow-wrap: break-word;
     hyphens: auto;
-    width: 60%;
+    width: 80%;
     box-sizing: border-box;
 }
 
@@ -28,12 +28,6 @@
 .description_text {
     font-size: 16px;
 }
-
-// .date {
-//     font-size: 10px;
-//     text-align: end;
-//     margin-top: 2vh;
-// }
 
 .check {
     width: 45px;
@@ -71,4 +65,11 @@
     position: absolute;
     z-index: 10;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .task_text{
+        width: 85vw;
+    }
 }
