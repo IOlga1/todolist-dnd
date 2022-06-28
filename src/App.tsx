@@ -20,10 +20,10 @@ export const TodoContext = React.createContext({
   counterDelete: 0,
   counterFinished: 0,
   counterMiddleTime: 0,
-  setCounterAdd: (fiber: any, queue?: any, action?: any) => { },
-  setCounterDelete: (fiber: any, queue?: any, action?: any) => { },
-  setCounterFinished: (fiber: any, queue?: any, action?: any) => { },
-  setCounterMiddleTime: (fiber: any, queue?: any, action?: any) => { },
+  setCounterAdd: (value: number) => { },
+  setCounterDelete: (fiber: number) => { },
+  setCounterFinished: (fiber: number) => { },
+  setCounterMiddleTime: (fiber: JSX.Element) => { },
   extraRender: () => {},
 });
 

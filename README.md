@@ -1,4 +1,5 @@
 # todolist-dnd
+![](/src/img/howToUse/4.png)
 
 1. git clone https://github.com/IOlga1/todolist-dnd.git
 2. npm install

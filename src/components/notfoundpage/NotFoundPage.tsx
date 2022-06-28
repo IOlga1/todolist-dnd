@@ -4,7 +4,7 @@ import '../../styles/notFoundPage.scss';
 
 
 export const NotFoundPage = () => {
-    const [counter, setCounter] = useState(150);
+    const [counter, setCounter] = useState(20);
 
     useEffect(() => {
         let intervalDeal = setInterval(() => {

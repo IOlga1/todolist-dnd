@@ -1,3 +1,5 @@
+import { JsxElement } from "typescript";
+
 export interface DndProps {
     getDndItem: (itemId: string) => void,
     getDndTarget: (targ: string) => void,
@@ -19,9 +21,9 @@ export interface ContextPropses {
     counterDelete: number,
     counterFinished: number,
     counterMiddleTime: number,
-    setCounterAdd: (fiber: any, queue?: any, action?: any) => any,
-    setCounterDelete: (fiber: any, queue?: any, action?: any) => any,
-    setCounterFinished: (fiber: any, queue?: any, action?: any) => any,
-    setCounterMiddleTime: (fiber: any, queue?: any, action?: any) => any,
+    setCounterAdd: (value: number) => any,
+    setCounterDelete: (fiber: number) => any,
+    setCounterFinished: (fiber: number) => any,
+    setCounterMiddleTime: (fiber: JSX.Element) => any,
     extraRender: () => any,
 }
