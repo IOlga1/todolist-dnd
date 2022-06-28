@@ -1,10 +1,9 @@
 # ToDoList
-![](/src/img/howToUse/4.png)
-
 ## Key features of the App
 + React functional component
 + React Routing
-+ useContext - for transfer the propses
++ State hoisting
++ useContext - for transfer props to distant components
 + TypeScript
 + Drag&Drop (of course, rewriting the states each time 
 we drop the task to the other area)
@@ -12,6 +11,9 @@ we drop the task to the other area)
 + 404 Not found page
 + CSS-animation (with SVG too)
 + All SVG graphics made by me using the figma App
+
+
+![](/src/img/howToUse/4.png)
 
 
 ## Instructions
