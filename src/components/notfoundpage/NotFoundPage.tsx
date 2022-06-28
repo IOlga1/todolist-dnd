@@ -20,7 +20,7 @@ export const NotFoundPage = () => {
     return (
         <div className='notFoundPage_404_wrap'>
             <div className='timer_home_redirect'>
-                <p>Вы будете перенаправлены на <Link to='/'>главную</Link> страницу через {counter} секунд</p>
+                <p>You will be redirected to the <Link to='/'>home page</Link> in {counter} seconds</p>
             </div>
         </div>
     )
